@@ -1,0 +1,132 @@
+DATA : raw information.
+
+DATABASE : organised collection of data,by which we can easily access,retrieve and manage data.
+
+-------- NEED OF DATABASE ---------
+
+1.Fast search.
+2.Secure storage.
+3.Data consistency.
+4.Multiple users access.
+5.Backup & recovery.
+
+-------- DATABASE MANAGEMENT SYSTEM -------------
+
+DBMS is a software that helps us in:
+
+1.creating databases.
+2.storing data in dbs.
+3.retrieve data from dbs.
+4.updating data in dbs.
+5.deleting data in dbs.
+6.managing security.
+
+eg: MySQL,Oracle Database,MongoDB,Microssoft SQL Server...
+
+DBMS is of two types: SQL and NoSQL.
+
+-------------------------------------------------------------------------
+
+_SQL_
+
+SQL stands for structured query language and it is used in relational database for CRUD operations.
+
+_RDBMS_
+
+In SQL database (relational database) the data is stored in tables, SQL queries are used for crud operations.
+
+eg: MySQL, PostgreSQL,Oracle.
+
+_NON-RDBMS_
+
+In non-sql databases the date is stored in formats like documents,key-value pair,.. and there is no fixed query language for crud.
+
+eg: MongoDB, Firebase, Redis.
+
+--------------------- SQL COMMANDS ------------------
+
+__DDL COMMANDS__
+
+DDL stands for Data  Definition Language.
+
+1.CREATE   --> creates new databases or tables.
+
+2.ALTER    --> Changes table structure.
+
+3.TRUNCATE --> Deletes all data from table.
+
+4.DROP     --> Deletes databases or table.
+
+5.RENAME   --> Changes table name.
+
+__DML COMMANDS__
+
+DML stands for Data Manipulation Language.
+
+1.INSERT --> Adds new data.(records)  
+
+2.UPDATE --> Changes existing data.
+
+3.DELETE --> Removes data.(records)
+
+__DQL COMMANDS__
+
+DQL stands for Data Query Language.
+
+1.SELECT --> Gets data from table.
+
+__TCL COMMANDS__
+
+1.COMMIT    --> saves changes permanently.
+
+2.ROLLBACK  --> undos changs.
+
+3.SAVEPOINT --> creates rollback point.
+
+  TRANSACTION.
+
+  A transaction is a group of one or more SQL operations executed as a single unit.
+
+   
+----------------------- SQL DATATYPES ----------------
+
+  Datatypes define what kind of data a column can store like numbers, text,dates,etc.
+
+  when creating a table,each column must have a data type.
+
+
+__INT__
+
+  used to store whole numbers.
+
+__VARCHAR__
+
+  used to store text.
+
+__FLOAT__
+
+  stores decimal numbers.
+
+__DATE__
+
+  stores date.
+
+__BOOLEAN__
+
+  stores true or false.
+
+  
+
+    
+
+
+
+
+
+
+
+ 
+
+
+
+
