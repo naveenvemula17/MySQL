@@ -115,6 +115,20 @@ __BOOLEAN__
 
   stores true or false.
 
+
+------------- CONSTRAINTS ---------------------
+
+    Constraints are rules which says what type of data to be stored in columns.
+
+    They ensure data is valid,correct and consistent.
+
+    1.PRIMARY KEY: unique identifier.
+    2.NOT NULL : cannot be empty.
+    3.UNIQUE : no duplicate values.
+    4.CHECK : limits allowed values.
+    5.DEFAULT: sets default value.
+
+    
   
 
     
