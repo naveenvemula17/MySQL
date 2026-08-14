@@ -128,7 +128,80 @@ __BOOLEAN__
     4.CHECK : limits allowed values.
     5.DEFAULT: sets default value.
 
-    
+___DATABASE COMMANDS._____
+
+    1.CREATE DATABASE ______;
+    2.SHOW DATABASES;
+    3.USE ____; mysql dont know where to create tables,so we need to pick one.
+    4.DROP DATABASE ____;    -used to delete database permanently.
+
+___TABLE COMMANDS.____
+
+    1.CREATE TABLE _______(
+      col1 dt,
+      col2 dt,
+      col3 dt
+    );
+
+    2.SHOW TABLES;
+    3.DESCRIBE ______;
+    4.DROP TABLE _____;
+
+___Inserting data into tables._____;
+
+    INSERT command is used to insert records into table.
+    syntax:
+      INSERT INTO _____ VALUES (val1,val2,val3,val4,...);
+
+___UPDATE COMMAND___
+
+    UPDATE command is used to modify existing data in a table.
+
+    UPDATE ____tname___
+    SET colname=value
+    WHERE ____condition___;
+
+    UPDATE students
+    SET age =24
+    WHERE id=1;
+
+___DELETE COMMAND.___
+
+    Delete command is used to remove records from a table.
+
+    DELETE FROM ____tname___
+    WHERE ____condition___;
+
+    DELETE FROM ____Tname___; -is same as truncate which is all rows will be deleted.
+
+____TRUNCATE.____
+
+    TRUNCATE command is used to empty table.
+
+    TRUNCATE TABLE ____tname___;
+
+____ALTER.____
+
+    ALTER command is used to modify the structure of table.
+
+    ALTER TABLE ____Tname___
+    ADD __col_dt__;
+
+___CONSTRAINTS____
+
+    1.PRIMARY KEY (UNIQUE + NOT NULL)
+    2.NOT NULL -> value required.
+    3.UNIQUE   -> no duplicates.
+    4.DEFAULT  -> default value.
+    5.CHECK    -> condition validation.
+
+
+
+
+
+
+
+
   
 
     
