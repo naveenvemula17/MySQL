@@ -2,7 +2,7 @@ DATA : raw information.
 
 DATABASE : organised collection of data,by which we can easily access,retrieve and manage data.
 
--------- NEED OF DATABASE ---------
+- NEED OF DATABASE -
 
 1.Fast search.
 2.Secure storage.
@@ -10,7 +10,7 @@ DATABASE : organised collection of data,by which we can easily access,retrieve a
 4.Multiple users access.
 5.Backup & recovery.
 
--------- DATABASE MANAGEMENT SYSTEM -------------
+- DATABASE MANAGEMENT SYSTEM -
 
 DBMS is a software that helps us in:
 
@@ -27,17 +27,17 @@ DBMS is of two types: SQL and NoSQL.
 
 -------------------------------------------------------------------------
 
-_SQL_
+SQL
 
 SQL stands for structured query language and it is used in relational database for CRUD operations.
 
-_RDBMS_
+RDBMS
 
 In SQL database (relational database) the data is stored in tables, SQL queries are used for crud operations.
 
 eg: MySQL, PostgreSQL,Oracle.
 
-_NON-RDBMS_
+NON-RDBMS 
 
 In non-sql databases the date is stored in formats like documents,key-value pair,.. and there is no fixed query language for crud.
 
@@ -45,117 +45,118 @@ eg: MongoDB, Firebase, Redis.
 
 --------------------- SQL COMMANDS ------------------
 
-__DDL COMMANDS__
+DDL COMMANDS 
 
-DDL stands for Data  Definition Language.
+--> DDL stands for Data  Definition Language.
 
-1.CREATE   --> creates new databases or tables.
+    1.CREATE   --> creates new databases or tables.
 
-2.ALTER    --> Changes table structure.
+    2.ALTER    --> Changes table structure.
 
-3.TRUNCATE --> Deletes all data from table.
+    3.TRUNCATE --> Deletes all data from table.
 
-4.DROP     --> Deletes databases or table.
+    4.DROP     --> Deletes databases or table.
 
-5.RENAME   --> Changes table name.
+    5.RENAME   --> Changes table name.
 
-__DML COMMANDS__
+DML COMMANDS
 
-DML stands for Data Manipulation Language.
+--> DML stands for Data Manipulation Language.
 
-1.INSERT --> Adds new data.(records)  
+    1.INSERT --> Adds new data.(records)  
 
-2.UPDATE --> Changes existing data.
+    2.UPDATE --> Changes existing data.
 
-3.DELETE --> Removes data.(records)
+    3.DELETE --> Removes data.(records)
 
-__DQL COMMANDS__
+DQL COMMANDS
 
-DQL stands for Data Query Language.
+--> DQL stands for Data Query Language.
 
-1.SELECT --> Gets data from table.
+    1.SELECT --> Gets data from table.
 
-__TCL COMMANDS__
+TCL COMMANDS
 
-1.COMMIT    --> saves changes permanently.
+    1.COMMIT    --> saves changes permanently.
 
-2.ROLLBACK  --> undos changs.
+    2.ROLLBACK  --> undos changs.
 
-3.SAVEPOINT --> creates rollback point.
+    3.SAVEPOINT --> creates rollback point.
 
-  TRANSACTION.
+TRANSACTION.
 
-  A transaction is a group of one or more SQL operations executed as a single unit.
+    A transaction is a group of one or more SQL operations executed as a single unit.
 
    
 ----------------------- SQL DATATYPES ----------------
 
-  Datatypes define what kind of data a column can store like numbers, text,dates,etc.
+    Datatypes define what kind of data a column can store like numbers, text,dates,etc.
 
-  when creating a table,each column must have a data type.
+    when creating a table,each column must have a data type.
 
+      INT     --> used to store whole numbers.
 
-__INT__
+      VARCHAR --> used to store text.
 
-  used to store whole numbers.
+      FLOAT   --> stores decimal numbers.
 
-__VARCHAR__
+      DATE    --> stores date.
 
-  used to store text.
-
-__FLOAT__
-
-  stores decimal numbers.
-
-__DATE__
-
-  stores date.
-
-__BOOLEAN__
-
-  stores true or false.
+      BOOLEAN --> stores true or false.
 
 
-------------- CONSTRAINTS ---------------------
+---------------------- CONSTRAINTS ---------------------
 
-    Constraints are rules which says what type of data to be stored in columns.
+    --> Constraints are rules which says what type of data to be stored in columns.
 
     They ensure data is valid,correct and consistent.
 
-    1.PRIMARY KEY: unique identifier.
-    2.NOT NULL : cannot be empty.
-    3.UNIQUE : no duplicate values.
-    4.CHECK : limits allowed values.
-    5.DEFAULT: sets default value.
+      1.PRIMARY KEY (UNIQUE + NOT NULL)
+      2.NOT NULL -> value required.
+      3.UNIQUE   -> no duplicates.
+      4.DEFAULT  -> default value.
+      5.CHECK    -> condition validation.
 
-___DATABASE COMMANDS._____
+
+----------------------- COMMANDS -----------------------
+
+  DATABASE commands. 
 
     1.CREATE DATABASE ______;
+
     2.SHOW DATABASES;
-    3.USE ____; mysql dont know where to create tables,so we need to pick one.
+
+    3.USE ____;              - mysql dont know where to create tables,so we need to pick one.
+
     4.DROP DATABASE ____;    -used to delete database permanently.
 
-___TABLE COMMANDS.____
+  TABLE commands. 
 
     1.CREATE TABLE _______(
       col1 dt,
       col2 dt,
       col3 dt
-    );
+      );
 
     2.SHOW TABLES;
+
     3.DESCRIBE ______;
+
     4.DROP TABLE _____;
 
-___Inserting data into tables._____;
+  Inserting data into tables. 
 
-    INSERT command is used to insert records into table.
+    --> INSERT command is used to insert records into table.
+
     syntax:
-      INSERT INTO _____ VALUES (val1,val2,val3,val4,...);
 
-___UPDATE COMMAND___
+      1.INSERT INTO _____                   VALUES (val1,val2,val3,...);
 
-    UPDATE command is used to modify existing data in a table.
+      2.INSERT INTO _____ ( c1,c2,c3,....)  VALUES (val1,val2,val3,...)
+
+  UPDATE command. 
+
+    --> UPDATE command is used to modify existing data in a table.
 
     UPDATE ____tname___
     SET colname=value
@@ -165,36 +166,75 @@ ___UPDATE COMMAND___
     SET age =24
     WHERE id=1;
 
-___DELETE COMMAND.___
+  DELETE command. 
 
-    Delete command is used to remove records from a table.
+    --> Delete command is used to remove records from a table.
 
     DELETE FROM ____tname___
-    WHERE ____condition___;
+    WHERE ____ condition___;
 
     DELETE FROM ____Tname___; -is same as truncate which is all rows will be deleted.
 
-____TRUNCATE.____
+  TRUNCATE command. 
 
-    TRUNCATE command is used to empty table.
+    --> TRUNCATE command is used to empty table.
 
     TRUNCATE TABLE ____tname___;
 
-____ALTER.____
+  ALTER command.
 
-    ALTER command is used to modify the structure of table.
+    --> ALTER command is used to modify the structure of table.
 
     ALTER TABLE ____Tname___
     ADD __col_dt__;
 
-___CONSTRAINTS____
+-----------------------------------------------------------------------------------------------------------------
 
-    1.PRIMARY KEY (UNIQUE + NOT NULL)
-    2.NOT NULL -> value required.
-    3.UNIQUE   -> no duplicates.
-    4.DEFAULT  -> default value.
-    5.CHECK    -> condition validation.
+  FILTERING.
 
+  IN WHERE CLAUSE
+    1.AND condition.
+    2.OR condition.
+    3.LIKE -it to filter varchar by using %'s.
+    4.BETWEEN- BETWEEN ____ AND ____.
+    
+  ORDER BY --> By default it is ascending order,if we want it to be in descending order add DESC  at the end.
+
+  LIMIT val  --> Gives records of val.
+
+  OFFSET val --> Skips records with val.
+
+    LIMIT 5 OFFSET 6 --> Gives 5 records from 7-11.
+
+  DISTINCT --> Used in SELECT with ___colname__ for distinct values of col. 
+
+      SELECT DISTINCT(CITY) FROM emp;    -> gives unique city names.(not records)
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+AUTOCOMMIT.
+
+--> Autocommit means every sql statement is saved permanently automatically.
+
+    By default, autocommit = ON ---> This means every update,delete and insert is saved immediately.
+
+       SELECT @@autocommit;   ---> To check autocommit status,If it is showing 1 then autocommit is on.
+
+       SET autocommit =0;     ---> To turn off the autocommit.
+
+       COMMIT;                ---> when autocommit is off but we want to save changes permanently.
+
+----------------------------------------------------------------------------------------------------------------
+
+
+FUNCTIONS
+
+  Function is used to perform operations on data and return a result.
+
+   Single row functions -> works on each row individually. (UPPER(),LOWER(),LENGTH().)
+
+   Aggregate functions -> works on multiple rows and returns one value. (COUNT(),SUM(),AVG(),MAX(),MIN().)
 
 
 
