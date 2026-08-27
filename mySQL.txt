@@ -195,7 +195,7 @@ TRANSACTION.
   IN WHERE CLAUSE
     1.AND condition.
     2.OR condition.
-    3.LIKE -it to filter varchar by using %'s.
+    3.LIKE -it is used to filter varchar by using %'s.
     4.BETWEEN- BETWEEN ____ AND ____.
     
   ORDER BY --> By default it is ascending order,if we want it to be in descending order add DESC  at the end.
@@ -236,24 +236,29 @@ FUNCTIONS
 
    Aggregate functions -> works on multiple rows and returns one value. (COUNT(),SUM(),AVG(),MAX(),MIN().)
 
+-------------------------------------------------------------------------------------------------------------
+
+PRIMARY KEY and FOREIGN KEY.
+
+    Primary key ---> primary key is a column that uniquely identifies each row in a table. (Unique,not null and no duplicates.)
+
+    Foreign key ---> foreign key is used to link to tables.
+
+    Linking     ---> FOREIGN KEY table2(colname) REFERENCES table1(colname);
+
+    ERRORS
+
+    1.when try to delete a row from parent table,they wont be deleted if it is linked with any row in child table.(if it is not linked row in parent table will be deleted.)
+
+    2.when you try to add a foreign key value in child table but if value is not present in parent table it will give a error.
 
 
+    ON DELETE CASCADE   ---> if we delete row in parent table all rows linked to that row in child table will be deleted.
 
+    ON DELETE SET NULL  ---> if we delete a row in parent table all rows linked to that row are set to null in child table.
 
-
-
-  
-
+    ON DELETE NO ACTION ---> the action will be blocked same like restrict.
     
-
-
-
-
-
-
-
- 
-
 
 
 
