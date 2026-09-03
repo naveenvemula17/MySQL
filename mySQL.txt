@@ -259,6 +259,61 @@ PRIMARY KEY and FOREIGN KEY.
 
     ON DELETE NO ACTION ---> the action will be blocked same like restrict.
     
+JOINS
 
+    Join is used to combine data from two or more tables based on a related column between them.
+
+    INNER JOIN:
+
+      gives only matched records in both tables.
+
+      SELECT e.name, d.dept_name
+      FROM employees e
+      INNER JOIN departments d
+      ON e.dept_id = d.dept_id;
+
+    LEFT JOIN :
+
+      returns all rows from the left table , plus matching rows from the right table.
+
+    RIGHT JOIN :
+
+      returns all rows from the right table,plus matching rows from the left table.
+
+
+    SELF JOIN :
+
+        SELF JOIN is a join where a table is joined with itself to relative rows within the same table.
+        
+        ---> use when we need relation between rows in same table.
+
+        There is no syntax as SELF we use left join or right join to execute self join.
+         USE CASES :
+
+           Employee  ---> manager relationship.
+           USER      ---> referrer relationship.
+           category  ---> parent category.
+
+    CROSS JOIN :
+
+        retuns every possible combination of rows in both tables.
+
+        SELECT * 
+        FROM emp 
+        CROSS JOIN admin;
+
+          emp have 3 rows and admin have 4 rows cross join retuns 12 rows.
+
+       
+
+    UNION :
+
+        UNION is used to combine the results of two or more SELECT queries into a single result.
+
+        UNION returns rows without duplicates.(when we select specific column);
+
+    UNION ALL :
+
+        UNION ALL  combines results of two select queries and allows duplicates.
 
 
