@@ -316,4 +316,57 @@ JOINS
 
         UNION ALL  combines results of two select queries and allows duplicates.
 
+GROUP BY :
+
+    GROUP BY is used to group rows which have same values in a column.
+
+    EG: when we take gender column it has two values in all rows either male or female, group by is used to group rows of male or female.
+
+    ---> remember it is not like filtering.
+
+    ---> use it with aggregate functions like count(),sum(),avg(),min() and max().
+
+    we can group by multiple columns also.
+
+      EG : group by gender , role 
+
+          gender    role   count
+
+          female   tester    3
+          female   sde       1
+          female   lead      1
+          female   devops    1
+          male     sde       2
+          male     devops    1
+          male     tester    1
+
+HAVING :
+
+    Having is used to filter groups.
+
+        WHERE is used to filter rows. (it filters before group by clause.)
+        HAVING  is used to filter groups. (it filters after group by clause.)
+
+    ? Dont use aggregate functions with having.
+
+ORDER OF COMMANDS:
+
+    Syntax:                                      EXECUTION :
+
+          SELECT                                           FROM
+          FROM                                             WHERE
+          WHERE                                            GROUP BY
+          GROUP BY                                         HAVING
+          HAVING                                           SELECT
+          ORDER BY                                         ORDER BY
+          LIMIT     OFFSET                                 LIMIT     OFFSET
+
+      
+
+
+    
+
+   
+
+
 
