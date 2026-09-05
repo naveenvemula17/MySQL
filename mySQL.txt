@@ -389,6 +389,37 @@ VIEWS :
       Reusability     : Use same query multiple times.
       Data abstration : Hide table structure from users.
 
+INDEX :
+
+    An index is a database object used to speed up data retrival(SELCET QUERIES.)
+
+    SELECT * FROM employees WHERE name = "priya";
+
+    -> Full table scan.
+    -> slow for large data (millions of rows)
+
+    syntax :
+
+      CREATE INDEX ind_name
+      ON tname(colname);         -> SQL creates an index on name column.
+
+      SHOW INDEX FROM emp;
+
+      DROP INDEX ind_name ON emp;
+
+      -> Now SQL directly finds row(required.)
+      -> No full scan and faster.
+
+    Types of Indexes:
+
+      1.Primary Index       : Automatically created when PRIMARY KEY is used.
+
+      2.UNIQUE INDEX        : Prevents duplicate values.  CREATE UNIQUE INDEX .....;
+
+      3.Single column index : Index on one column.
+
+      4.Composite index     : Index on multiple columns.
+
 
 
 
