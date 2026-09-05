@@ -361,6 +361,38 @@ ORDER OF COMMANDS:
           ORDER BY                                         ORDER BY
           LIMIT     OFFSET                                 LIMIT     OFFSET
 
+VIEWS :
+
+    A view is a virtual table based on a sql query.
+
+    A view is a saved SELECT query that behaves like a table.
+
+    syntax :
+
+      CREATE VIEW view_name AS
+      SELECT name FROM emp WHERE salary >=60000;
+
+      DROP VIEW view_name;
+
+      SHOW FULL TABLES
+      WHERE TABLE_TYPE ='VIEW';
+
+      1.It does not store data itself.It stores only the query.
+      2.When you access a view, SQL runs the stored query and shows the result.
+
+      --> Changes in view reflect in main table and changes in main table reflect in views also.
+
+    ADVANTAGES :
+
+      Security        : Hide sensitive columns.
+      Simplicity      : Complex queries can be simplified.
+      Reusability     : Use same query multiple times.
+      Data abstration : Hide table structure from users.
+
+
+
+
+
       
 
 
